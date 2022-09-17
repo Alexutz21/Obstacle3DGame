@@ -22,12 +22,12 @@ public class PlayerMovement : MonoBehaviour
         //if input a or LeftArrow
         if (Input.GetKey("a") || (Input.GetKey(KeyCode.LeftArrow)))
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         //if input d or RightArrow
         if (Input.GetKey("d") || (Input.GetKey(KeyCode.RightArrow)))
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
