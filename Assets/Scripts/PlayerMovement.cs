@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     //This is a referance to the Rigidbody component called "rb"
     public Rigidbody rb;
     public float forwardForce = 1000f;
-    public float sidewaysForce = 500f;
+    public float sidewaysForce = 300f;
 
     //We use FixedUpdates instead of Update because we 
     //are messing with the physics in Unity

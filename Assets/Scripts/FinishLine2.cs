@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishLine : MonoBehaviour
+public class FinishLine2 : MonoBehaviour
 {
     [SerializeField] float nextSceneDelay = 1f;
 
@@ -14,6 +14,6 @@ public class FinishLine : MonoBehaviour
     }
     void NextScene()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }
