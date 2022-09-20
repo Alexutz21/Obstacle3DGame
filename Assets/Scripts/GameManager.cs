@@ -5,15 +5,15 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
     public float restartDelay = 2f;
+    //public float nextSceneDelay = 1f;
 
-    // public GameObject completeLevelUI;
+    public GameObject completeLevelUI;
 
-    // public void CompleteLevel()
-    // {
-    //     completeLevelUI.SetActive(true);
-    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-    // }
+    public void CompleteLevel()
+    {
+        completeLevelUI.SetActive(true);
+        //Invoke("NextScene", nextSceneDelay);
+    }
     public void GameOver()
     {
         if (gameHasEnded == false)
@@ -26,4 +26,8 @@ public class GameManager : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
+    // void NextScene()
+    // {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    // }
 }
